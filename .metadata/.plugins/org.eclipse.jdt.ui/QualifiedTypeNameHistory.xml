@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.yuji2015.week1helloworld.R.id"/>
+<fullyQualifiedTypeName name="net.yuji2015.week1helloworld.R.string"/>
+<fullyQualifiedTypeName name="net.yuji2015.projectone.R.id"/>
+<fullyQualifiedTypeName name="net.yuji2015.multiverse.R.id"/>
+<fullyQualifiedTypeName name="net.yuji2015.multiversenew.R.id"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.graphics.Bitmap"/>
+<fullyQualifiedTypeName name="android.graphics.BitmapFactory"/>
+<fullyQualifiedTypeName name="android.webkit.WebView"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="net.yuji2015.listytasky.R.id"/>
+<fullyQualifiedTypeName name="net.yuji2015.listytasky001.R.id"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+</qualifiedTypeNameHistroy>
