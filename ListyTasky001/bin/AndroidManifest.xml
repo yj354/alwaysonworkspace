@@ -30,6 +30,12 @@
         
         <activity
             android:name="net.yuji2015.listytasky001.Activity_2_0_1"></activity>
+        
+        <activity
+            android:name="net.yuji2015.listytasky001.Activity_2_1"></activity>
+        
+        <activity
+            android:name="net.yuji2015.listytasky001.Activity_2_2"></activity>
    
         </application>
 

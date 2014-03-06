@@ -33,6 +33,6 @@
         android:layout_below="@+id/button1.1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:text="Manager" />
+        android:text="Profile" />
 
 </RelativeLayout>

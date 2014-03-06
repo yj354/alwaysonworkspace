@@ -2,50 +2,81 @@ package net.yuji2015.listytasky001;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-public class Activity_2_0 extends Activity {
-//	implements OnClickListener	
-//	Button myButton;
-	Button button20_0;
-	Button button20_1;
+public class Activity_2_0 extends Activity implements OnClickListener {		
 
+	EditText myEditText20_0;
+	
+	Button myButton20_0;
+	Button myButton20_1;
+	
+	SharedPreferences sp;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		LayoutInflater inflater =  getLayoutInflater();
 		setContentView(R.layout.activity_2_0);
 		
-		OnClickListener onClickListener = null;
-		button20_0.setOnClickListener(onClickListener);
-		button20_1.setOnClickListener(onClickListener);
+		myEditText20_0 = (EditText)findViewById(R.id.editText20_0); 
 		
-//		myButton = (Button)findViewById(R.id.button20_1);
-//		myButton.setOnClickListener(this);
+		myButton20_0 = (Button)findViewById(R.id.button20_0);
+		myButton20_1 = (Button)findViewById(R.id.button20_1);
+		
+		sp = getSharedPreferences("thetext", MODE_PRIVATE);
+		String previousEntry = sp.getString("firsttext", null);
+		if(previousEntry !=null) {
+			Toast.makeText(this, previousEntry, Toast.LENGTH_SHORT).show();	
+		}
+		
+		
+		myButton20_0.setOnClickListener(
+			new OnClickListener(){
+				@Override
+				public void onClick(View v) {
+					Log.v("Activity_2_0","button20_0 was clicked");
+//					Toast.makeText(this, myEditText20_0.getText(), Toast.LENGTH_SHORT).show();
+					SharedPreferences.Editor spe = sp.edit();
+					spe.putString("firsttext", myEditText20_0.getText().toString());
+					spe.commit();
+				}
+			}
+		);
+		
+		myButton20_1.setOnClickListener(
+			new OnClickListener(){
+				@Override
+				public void onClick(View v) {
+					Log.v("Activity_2_0","button20_1 was clicked");
+		        	Intent i = new Intent(Activity_2_0.this, Activity_2_0_1.class);
+		    		startActivity(i);
+				}
+			}
+		);
+	
+	
 	}
 
-
-private OnClickListener onClickListener = new OnClickListener() {
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-
-		switch(v.getId()){
-        case R.id.button20_0:
-        	Log.v("Activity_2_1","button20_0 was clicked");
-        break;
-        case R.id.button20_1:
-        	Log.v("Activity_2_0","button20_1 was clicked");
-//        	Intent i = new Intent(this, Activity_2_0_1.class);
-//    		startActivity(i);
-        break;
+		
 	}
+
+
 }
-};
-}
+
+
 
 
 

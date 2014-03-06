@@ -1,0 +1,58 @@
+package net.yuji2015.listytasky001;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class Activity_2_0 extends Activity implements OnClickListener {		
+
+	Button myButton20_0;
+	Button myButton20_1;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_2_0);
+		
+		myButton20_0 = (Button)findViewById(R.id.button20_0);
+		myButton20_1 = (Button)findViewById(R.id.button20_1);
+		
+		
+		myButton20_0.setOnClickListener(
+			new OnClickListener(){
+				@Override
+				public void onClick(View v) {
+					Log.v("Activity_2_0","button20_0 was clicked");
+				}
+			}
+		);
+		
+		myButton20_1.setOnClickListener(
+			new OnClickListener(){
+				@Override
+				public void onClick(View v) {
+					Log.v("Activity_2_0","button20_1 was clicked");
+//		        	Intent i = new Intent(this, Activity_2_0_1.class);
+//		    		startActivity(i);
+				}
+			}
+		);
+	
+	
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+
+
+
+
+

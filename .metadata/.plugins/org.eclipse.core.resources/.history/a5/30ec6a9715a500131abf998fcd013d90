@@ -1,0 +1,16 @@
+package net.yuji2015.listytasky001;
+
+import android.app.Application;
+import android.os.Bundle;
+
+
+public class Activity_2_1 extends Application {
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate();
+		setContentView(R.layout.activity_2_1);
+	}
+
+
+}
