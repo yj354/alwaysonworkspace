@@ -1,7 +1,0 @@
-package net.yuji2015.multiverse2;
-
-import android.app.Activity;
-
-public class OtherActivity extends Activity {
-
-}
