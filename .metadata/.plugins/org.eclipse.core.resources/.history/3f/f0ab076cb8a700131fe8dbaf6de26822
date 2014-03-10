@@ -1,0 +1,19 @@
+package net.yuji2015.listytasky001;
+
+import android.app.Application;
+
+public class Parse extends Application {
+
+	public static void initialize(MainActivity mainActivity, String string,
+			String string2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void initialize(MainActivity mainActivity, String string,
+			String string2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

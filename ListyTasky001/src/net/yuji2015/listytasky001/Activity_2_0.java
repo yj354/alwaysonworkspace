@@ -22,6 +22,8 @@ public class Activity_2_0 extends Activity implements OnClickListener {
 	
 	SharedPreferences sp;
 	
+//	ArrayList allText;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -49,6 +51,7 @@ public class Activity_2_0 extends Activity implements OnClickListener {
 					SharedPreferences.Editor spe = sp.edit();
 					spe.putString("firsttext", myEditText20_0.getText().toString());
 					spe.commit();
+					finish();
 				}
 			}
 		);
@@ -72,7 +75,6 @@ public class Activity_2_0 extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		
 	}
-
 
 }
 

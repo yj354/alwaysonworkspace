@@ -1,0 +1,7 @@
+package com.parse;
+
+import android.app.Application;
+
+public class ParseAnalytics extends Application {
+
+}

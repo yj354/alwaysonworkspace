@@ -1,0 +1,7 @@
+package net.yuji2015.listytasky001;
+
+import android.app.Application;
+
+public class ParseAnalytics extends Application {
+
+}

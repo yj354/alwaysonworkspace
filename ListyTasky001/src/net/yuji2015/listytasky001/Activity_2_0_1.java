@@ -1,6 +1,7 @@
 package net.yuji2015.listytasky001;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.webkit.WebView;
@@ -8,15 +9,20 @@ import android.webkit.WebView;
 
 public class Activity_2_0_1 extends Activity {
 	
-	WebView webview;
+//	WebView webview;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_2_0_1);
 		
-		webview = (WebView) this.findViewById(R.id.webViewFacebook);
-		webview.loadUrl("http://facebook.com");
+//		webview = (WebView) this.findViewById(R.id.webViewFacebook);
+//		webview.loadUrl("http://facebook.com");
+		Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+		sharingIntent.setType("text/plain");
+		sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
+//		sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, sharebody);
+		startActivity(sharingIntent);
 		
 	}
 	
@@ -28,3 +34,4 @@ public class Activity_2_0_1 extends Activity {
 	}
 
 }
+
